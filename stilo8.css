@@ -1,0 +1,473 @@
+@charset "utf-8";
+/* CSS Document */
+
+body header{ 
+	background-color: #1387F3;
+	text-align: center;
+	color: #E88D0A;
+	text-shadow: 3px 2px #060606;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 30;
+}
+body footer{
+	position: relative;
+	top:2em;
+	background-color: #1387F3;
+	text-align: left;
+	color: #F3EAEA;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+body footer p{
+	text-align: center
+}
+body footer h5{
+	color: #C7BA10;
+}
+.menu{
+	color: #F8F7AF;
+	margin-top: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #121111;
+	text-align: center;
+	position: relative;
+}
+.menu ul{
+	background-color: #041B62;
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid #0000;
+	overflow: hidden;
+	list-style-type: none;
+}
+.menu ul li{
+	float: left;
+	width: 110px;
+}
+.menu ul li:hover{
+	background-color: rgba(253,253,253,.5);
+}
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+    color: #F8F7AF;
+}
+ul li a:hover{
+	color: #F1A707;
+}
+
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+    color: #F8F7AF;
+}
+ul li a:hover{
+	color: #F1A707;
+}
+
+
+
+
+
+
+/*SUBMENU*/
+
+nav ul li ul{
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	background-color: antiquewhite;
+	position: absolute;
+	top: 4px;
+	left: -5px;
+	padding: 14px 0px;
+	visibility: hidden;
+	*opacity: 0;
+	box-shadow: 0px 0px 10px 0px rbga(0,0,0,0.5);
+	z-index: 10;
+	transition: all 300ms ease;
+	
+}
+
+nav ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+	top: 78px;
+}
+
+nav ul li ul:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #FFFFFF;
+	position: absolute;
+	top: -12px;
+	left: 20px;
+	background: center;
+}
+
+
+nav ul li ul a{
+	display: block;
+	color: #FFFFFF;
+	padding: 5px;
+	padding-left: 14px;
+	margin: 10px;
+	font-size: 14px;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+}
+
+
+nav ul li ul li a:hover{
+	background: #FFEDBF;
+	color: #00000;
+	transition: scale(1,1);
+	padding-left: 30px;
+	font-size: 14px;
+	box-shadow: 0px 0px 10px 0px rbga(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+#green{
+	left: 50%;
+	background-color: #FFFFFF;
+	padding-left: 48%;
+	padding-top: 4em;
+}
+
+
+
+
+
+
+#contactoform{
+	background-color: #494949;
+	width: 500px;
+	padding: 20px;
+	margin-top: 50px;
+	margin-right: 120px;
+	border-radius: 20px;
+}
+
+#contactoform input,
+#contactoform select,
+#contactoform textarea,
+#contactoform label{
+	font-size: 15px;
+	margin-bottom: 1px;
+	font-family: Arial, "sans-serif";
+	align-content: center;
+}
+#contactoform input,
+#contactoform select,
+#contactoform textarea{
+	width: 320px;
+	background-color: #000000;
+	border: 0;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	align-items: flex-end;
+
+}
+#contactoform input:focus
+#contactoform select:focus,
+#contactoform textarea:focus{
+	background-color: #000000;
+}
+#contactoform textarea{
+	height: 100px;
+	width: 500px;
+}
+#contactoform #submit{
+	width: 200px;
+	color: #000000;
+	border: none;
+	background-color: #165DDD;
+    margin-left: 30%;
+}
+input:required,
+textarra:required{
+	box-shadow: none;
+	
+}
+#failure,
+#success{
+	color: #50FFCC;
+	display: none;
+}
+
+
+
+ 
+#googlemap{
+	padding-top: 3em;
+	position: absolute;
+	left: 45%;
+	border: none;
+	width: 50px;
+}
+
+
+contactos{
+	padding-top: 30em;
+	
+	background-color: #FFD4A1;
+		
+}
+
+
+body footer{
+	position: relative;
+	top: 25em;
+	background-color:  #165DDD;
+	text-align: left;
+	color: #F3EAEA;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	
+}
+body {
+    font-family: Arial, sans-serif;
+   
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    max-width: 1000px;
+    margin: 50px auto; /* Centrar el contenedor */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	top: -1000px;
+}
+h2{
+	color: #07354E;
+	text-align: left;
+	margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+	margin-top: 5px;
+	
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/*Femenino & masculino*/
+
+.gender-box h3{
+	color: #333;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 8px;
+	
+}
+body {
+    font-family: Arial, sans-serif;
+    background:  #71B4EC ;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 900px;
+
+    padding: 20px;
+    background-color: #fff;
+    
+}
+.container{
+	align-items: center;
+	top: -500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+	font-size: 15px;
+	
+}
+.column h2{
+		color: #041978;
+}
+
+.radio-group {
+    margin-top: 10px;
+}
+
+.radio-label {
+    display: block;
+    margin-top: 5px;
+}
+label for{
+	padding-top: 20px;
+}
+
+.infoPadres h3{
+	padding-top: 20px;
+	top: 2px;
+	font-size: 30px;
+	color:#423E3E;
+}
+.form-group h2{
+	color:#423E3E;
+}
+.radio-group radio{
+	padding-top: 20px;
+	
+	
+}
+
+body {
+    margin: 0;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+   
+    justify-content: center; /* Centra horizontalmente el contenedor del logo */
+    align-items: center; /* Centra verticalmente el contenedor del logo */
+ 
+}
+
+.logo-container {
+    width: 100px;
+    height: 40%; /* Ajusta el tamaño del contenedor según tus necesidades */
+    background-color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex; /* Define un contenedor flex para centrar el logo dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente el logo dentro del contenedor */
+    align-items: center; /* Centra verticalmente el logo dentro del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 1200px) {
+    .logo-container {
+        width: 80%; /* Reduce el tamaño del contenedor en pantallas medianas */
+        height: 35%; /* Ajusta la altura del contenedor */
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        width: 70%; /* Reduce aún más el tamaño del contenedor en pantallas pequeñas */
+        height: 30%; /* Ajusta la altura del contenedor */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        width: 90%; /* Ocupa casi todo el ancho en pantallas muy pequeñas */
+        height: 25%; /* Ajusta la altura del contenedor */
+    }
+}
+
+.logo-container {
+    display: flex; /* Define un contenedor flex para el cuerpo */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    width: 100%; /* Opción para ocupar el 100% del ancho */
+    height: 40%; /* Opción para ocupar el 100% de la altura */
+    background-color: #ffffff; /* Fondo opcional para el contenedor */
+    border: 2px solid #000; /* Borde opcional para el contenedor */
+    border-radius: 20px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
+.logo-container img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain; /* Asegura que la imagen mantenga su proporción y no se deforme */
+}
+*{padding: 0;
+margin: 0;}
+
+
+

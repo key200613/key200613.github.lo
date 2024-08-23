@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+body header{ 
+	background-color: #1387F3;
+	text-align: center;
+	color: #E88D0A;
+	text-shadow: 3px 2px #060606;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 30;
+}
+body footer{
+	position: relative;
+	top:6em;
+	background-color: #1387F3;
+	text-align: left;
+	color: #F3EAEA;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+body footer p{
+	text-align: center
+}
+body footer h5{
+	color: #C7BA10;
+}
+.menu{
+	color: #F8F7AF;
+	margin-top: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #121111;
+	text-align: center;
+	position: relative;
+}
+.menu ul{
+	background-color: #041B62;
+	margin: 0px;
+	padding: 0px;
+	border: 0px solid #0000;
+	overflow: hidden;
+	list-style-type: none;
+}
+.menu ul li{
+	float: left;
+	width: 110px;
+}
+.menu ul li:hover{
+	background-color: rgba(253,253,253,.5);
+}
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+    color: #F8F7AF;
+}
+ul li a:hover{
+	color: #F1A707;
+}
+div{
+	width: 300px;
+	height: 300px;
+	border: solid;
+	display: inline-block;
+}
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+    color: #F8F7AF;
+}
+ul li a:hover{
+	color: #F1A707;
+}
+h1{
+	font-size: 40px;
+	color: #FF0004;
+}
